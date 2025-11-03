@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galactic Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
+ 
+</head>
+<body>
+  <div class="cosmic-backdrop"></div>
+  <div class="explorer-hub">
+    <header class="mission-header">
+      <div class="title-section">
+        <h1 class="explore-with">Explore with</h1>
+        <h2 class="galactic-bot">GalactiBot</h2>
+      </div>
+      <svg class="spaceship-icon" viewBox="0 0 100 100">
+        <path d="M50 10 L70 40 L60 50 L70 60 L50 90 L30 60 L40 50 L30 40 Z" fill="#00ffff" stroke="#ff00ff" stroke-width="2"/>
+        <circle cx="50" cy="50" r="5" fill="#ffff00"/>
+      </svg>
+    </header>
+    <aside class="mission-briefs">
+      <button class="toggle-briefs" id="toggle-briefs">Toggle Missions ▼</button>
+      <div class="brief-cards" id="brief-cards">
+        <div class="brief-card">Debug a Python script for space simulations.</div>
+        <div class="brief-card">How to master AI coding in 2025?</div>
+        <div class="brief-card">Tools for debugging alien code (JavaScript).</div>
+        <div class="brief-card">Build a Vue.js component for a star map.</div>
+      </div>
+    </aside>
+    <main class="chat-zone">
+      <div class="chat-container" id="chat-container">
+        <div class="message bot">Greetings, explorer! 🚀 I'm GalactiBot, your coding astronaut. Ready to debug the cosmos?</div>
+      </div>
+      <div class="input-station">
+        <input type="text" id="explorer-input" placeholder="Type your command..." />
+        <button class="launch-btn" id="launch-btn">🚀</button>
+      </div>
+    </main>
+    <footer class="bot-footer">Crafted by AeroStyle | Powered by Curiosity</footer>
+  </div>
+ <script src="index.js">
+
+ </script>
+
+</body>
+</html>

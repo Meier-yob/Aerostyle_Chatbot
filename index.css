@@ -1,0 +1,197 @@
+    .cosmic-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #000033 0%, #330066 50%, #660033 100%);
+      opacity: 0.8;
+      z-index: -1;
+      animation: twinkle 10s infinite alternate;
+    }
+
+    @keyframes twinkle {
+      0% { opacity: 0.7; }
+      100% { opacity: 0.9; }
+    }
+
+    .explorer-hub {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .mission-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid #00ffff;
+    }
+
+    .title-section h1, .title-section h2 {
+      margin: 0;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .explore-with {
+      font-size: 1.5em;
+      color: #ff00ff;
+    }
+
+    .galactic-bot {
+      font-size: 2em;
+      color: #ffff00;
+    }
+
+    .spaceship-icon {
+      width: 80px;
+      height: 80px;
+      filter: drop-shadow(0 0 10px #00ffff);
+    }
+
+    /* Sidebar for mission briefs */
+    .mission-briefs {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.3);
+      border-right: 1px solid #ff00ff;
+    }
+
+    .toggle-briefs {
+      background: #00ffff;
+      color: #000;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: background 0.3s;
+    }
+
+    .toggle-briefs:hover {
+      background: #ffff00;
+    }
+
+    .brief-cards {
+      display: block;
+    }
+
+    .brief-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      text-shadow: 0 0 5px #ffffff;
+    }
+
+    .brief-card:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    .chat-zone {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      border: 1px solid #ff00ff;
+      margin-bottom: 10px;
+    }
+
+    .message {
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 80%;
+      word-wrap: break-word;
+    }
+
+    .message.bot {
+      background: rgba(0, 255, 255, 0.2);
+      align-self: flex-start;
+      text-shadow: 0 0 5px #00ffff;
+    }
+
+    .message.user {
+      background: rgba(255, 0, 255, 0.2);
+      align-self: flex-end;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .input-station {
+      display: flex;
+      gap: 10px;
+    }
+
+    #explorer-input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #00ffff;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    #explorer-input::placeholder {
+      color: #cccccc;
+    }
+
+    .launch-btn {
+      padding: 10px 15px;
+      background: #ffff00;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Orbitron', sans-serif;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .launch-btn:hover {
+      background: #ff00ff;
+    }
+
+    .bot-footer {
+      text-align: center;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 0.8em;
+      text-shadow: 0 0 5px #ffffff;
+    }
+
+    @media (max-width: 768px) {
+      .explorer-hub {
+        flex-direction: column;
+      }
+      .mission-briefs {
+        border-right: none;
+        border-bottom: 1px solid #ff00ff;
+      }
+      .chat-zone {
+        padding: 10px;
+      }
+    }
